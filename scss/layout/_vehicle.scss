@@ -1,0 +1,28 @@
+/* 
+    CONTAIN ALL CSS OF VEHICLE PAGE
+*/
+
+#vehicle {
+    background-color: $color-blue-overlay;
+    #vehicle-contain {
+        width: 80%;
+        margin: 0 auto;
+        background-color: $color-white;
+    }
+    .nav-vehicle.nav-bar {
+        display: flex;
+        justify-content: center;
+        .nav-link {
+            padding: $padding-1 $padding-4;
+            font-weight: $font-weight-bold;
+            color: $color-darkblue-200;
+            font-size: $font-size-1;
+            &:hover{
+                color: $color-blue-200;
+            }
+        }
+        li.active{
+            text-decoration: underline;
+        }
+    }
+}

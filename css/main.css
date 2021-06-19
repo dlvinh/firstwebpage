@@ -1,0 +1,75 @@
+/* 
+    Noi import het tat ca file sass nho 
+*/
+body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 11px;
+}
+
+/* 
+    Contain all variable.
+*/
+.navbar {
+  padding: 0;
+}
+
+#header {
+  background-color: #007cc3;
+}
+
+#header .nav-brand {
+  padding: 0 25px;
+}
+
+#header a {
+  color: #fff;
+  border-left: 1px solid #4f91ca;
+  border-right: 1px solid #4f91ca;
+  padding: 20px 25px;
+}
+
+.no-border {
+  border: 0 !important;
+}
+
+/* 
+    CONTAIN ALL CSS OF VEHICLE PAGE
+*/
+#vehicle {
+  background-color: rgba(0, 67, 108, 0.8);
+}
+
+#vehicle #vehicle-contain {
+  width: 80%;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+#vehicle .nav-vehicle.nav-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#vehicle .nav-vehicle.nav-bar .nav-link {
+  padding: 6px 25px;
+  font-weight: bold;
+  color: #00324f;
+  font-size: 1.4rem;
+}
+
+#vehicle .nav-vehicle.nav-bar .nav-link:hover {
+  color: #2198dc;
+}
+
+#vehicle .nav-vehicle.nav-bar li.active {
+  text-decoration: underline;
+}
+/*# sourceMappingURL=main.css.map */
