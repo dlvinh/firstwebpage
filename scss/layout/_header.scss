@@ -1,9 +1,13 @@
+#header{
+    position: fixed;
+    top: 0;
+    left: 0;
+}
 .navbar {
     padding: 0;
 }
-#header {
+#navbar {
     background-color: $color-blue-100;
-
     .nav-brand {
         padding: 0 $padding-4;
     }

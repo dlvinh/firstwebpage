@@ -1,0 +1,19 @@
+/* 
+    use to render automatically all css style
+*/
+
+/* THis function create a list of css style which has
+    $index: is the index fromt he list (1 to 6)
+    $bg-color: the color after each bracket
+    => result: #veh-1{
+                       background: linear-gradient(#bbbdc0,$color-grey,$color-grey);}
+                
+*/  
+@each $index,$bg-color in (1,#3C4C5C) (2,#5E5E5E) (3,#14409A) (4,#C0BAB5) (5,#5C5C5C) (6,#33569C) {
+    #veh-#{$index}{
+        background: linear-gradient(#bbbdc0,$color-grey,$color-grey);
+    }
+    .vehicle-product:hover > #veh-#{$index}{
+        background:linear-gradient($bg-color,$color-grey,$color-grey);
+    }
+}

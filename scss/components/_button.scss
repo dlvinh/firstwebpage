@@ -15,6 +15,7 @@
 
 .btn-vehicle {
     @include button($color-blue-200,$color-blue-200, $color-white, $padding-2 $padding-5, $color-white, $color-blue-100);
+    margin-right: $mg-1;
 }
 .btn-vehicle.active {
     @include button($color-blue-200,$color-white ,$color-blue-200, $padding-2 $padding-5, $color-blue-200,$color-white);
