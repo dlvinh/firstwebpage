@@ -20,3 +20,7 @@
 .btn-vehicle.active {
     @include button($color-blue-200,$color-white ,$color-blue-200, $padding-2 $padding-5, $color-blue-200,$color-white);
 }
+
+.btn-search{
+    @include button($color-blue-200, transparent, $color-blue-100, $padding-1 $padding-5,$color-blue-200,$color-white);
+}

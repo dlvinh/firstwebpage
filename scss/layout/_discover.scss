@@ -1,0 +1,49 @@
+.discoverySection{
+    left: unset;
+    right: -30%;
+    padding: $padding-3;
+    // USE MIXIN TO CREATE ARROW
+    &::before{
+        @include arrow(unset,15%);
+    }
+    .dropdown-menu-detail{
+        &.dropdown-item:hover{
+            background-color: transparent ;
+        }
+        display: flex;
+        .menu-left{
+            padding-right: $padding-2;
+        }
+        ul{
+            list-style: none;
+            padding:0;
+            margin:0;
+            li{
+                padding: $padding-1 0;
+                a{
+                    text-decoration: none;
+                    color: $color-blue-200;
+                    padding:0;
+                    font-size: $font-size-1;
+                    font-weight: $font-weight-bold;
+                }
+            }
+            
+        }
+    }
+    .social-icon-container{
+        display: flex;
+        justify-content: space-around;
+        i{
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: $color-blue-200;
+            color: $color-white;
+            text-align: center;
+            line-height: 30px;
+            font-size: 15px;
+           
+        }
+    }
+}

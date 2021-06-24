@@ -51,10 +51,6 @@ html {
   color: #2198dc !important;
 }
 
-#vehicle.hiden-vehicle {
-  display: none;
-}
-
 #vehicle.show-vehicle {
   display: block;
 }
@@ -227,6 +223,133 @@ html {
   margin-bottom: 0;
 }
 
+.discoverySection {
+  left: unset;
+  right: -30%;
+  padding: 20px;
+}
+
+.discoverySection::before {
+  content: "";
+  border-bottom: 15px solid white;
+  border-right: 15px solid transparent;
+  border-left: 15px solid transparent;
+  position: absolute;
+  top: -15px;
+  left: unset;
+  right: 15%;
+}
+
+.discoverySection .dropdown-menu-detail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.discoverySection .dropdown-menu-detail.dropdown-item:hover {
+  background-color: transparent;
+}
+
+.discoverySection .dropdown-menu-detail .menu-left {
+  padding-right: 15px;
+}
+
+.discoverySection .dropdown-menu-detail ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.discoverySection .dropdown-menu-detail ul li {
+  padding: 6px 0;
+}
+
+.discoverySection .dropdown-menu-detail ul li a {
+  text-decoration: none;
+  color: #2198dc;
+  padding: 0;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.discoverySection .social-icon-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.discoverySection .social-icon-container i {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #2198dc;
+  color: #fff;
+  text-align: center;
+  line-height: 30px;
+  font-size: 15px;
+}
+
+#search-section {
+  background-color: #f6f6f6;
+  padding: 6px 50px;
+}
+
+#search-section form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /* CSS button search is conducted in _button.scss */
+}
+
+#search-section form i {
+  color: #2198dc;
+  font-size: 1.8rem;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding-right: 6px;
+}
+
+#search-section form input {
+  border: none;
+  width: 90%;
+  height: 4.5rem;
+  background: transparent;
+  outline: none;
+  font-weight: 300;
+  font-size: 2.4rem;
+  color: #2198dc;
+}
+
+p
+#search-section form input::-webkit-input-placeholder {
+  font-size: 2.4rem;
+  font-weight: 300;
+}
+
+p
+#search-section form input:-ms-input-placeholder {
+  font-size: 2.4rem;
+  font-weight: 300;
+}
+
+p
+#search-section form input::-ms-input-placeholder {
+  font-size: 2.4rem;
+  font-weight: 300;
+}
+
+p
+#search-section form input::placeholder {
+  font-size: 2.4rem;
+  font-weight: 300;
+}
+
 .btn-vehicle {
   border: 2px solid #2198dc;
   border-radius: 40px;
@@ -260,6 +383,22 @@ html {
   color: #fff;
 }
 
+.btn-search {
+  border: 2px solid #2198dc;
+  border-radius: 40px;
+  background-color: transparent;
+  color: #007cc3;
+  font-weight: bold;
+  padding: 6px 30px;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+.btn-search:hover {
+  background-color: #2198dc;
+  color: #fff;
+}
+
 /* 
     use to render automatically all css style
 */
@@ -280,6 +419,11 @@ html {
   background: linear-gradient(#3C4C5C, #f6f6f6, #f6f6f6);
 }
 
+.delay-1 {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+
 #veh-2 {
   background: -webkit-gradient(linear, left top, left bottom, from(#bbbdc0), color-stop(#f6f6f6), to(#f6f6f6));
   background: linear-gradient(#bbbdc0, #f6f6f6, #f6f6f6);
@@ -288,6 +432,11 @@ html {
 .vehicle-product:hover > #veh-2 {
   background: -webkit-gradient(linear, left top, left bottom, from(#5E5E5E), color-stop(#f6f6f6), to(#f6f6f6));
   background: linear-gradient(#5E5E5E, #f6f6f6, #f6f6f6);
+}
+
+.delay-2 {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
 }
 
 #veh-3 {
@@ -300,6 +449,11 @@ html {
   background: linear-gradient(#14409A, #f6f6f6, #f6f6f6);
 }
 
+.delay-3 {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+
 #veh-4 {
   background: -webkit-gradient(linear, left top, left bottom, from(#bbbdc0), color-stop(#f6f6f6), to(#f6f6f6));
   background: linear-gradient(#bbbdc0, #f6f6f6, #f6f6f6);
@@ -308,6 +462,11 @@ html {
 .vehicle-product:hover > #veh-4 {
   background: -webkit-gradient(linear, left top, left bottom, from(#C0BAB5), color-stop(#f6f6f6), to(#f6f6f6));
   background: linear-gradient(#C0BAB5, #f6f6f6, #f6f6f6);
+}
+
+.delay-4 {
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
 }
 
 #veh-5 {
@@ -320,6 +479,11 @@ html {
   background: linear-gradient(#5C5C5C, #f6f6f6, #f6f6f6);
 }
 
+.delay-5 {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
 #veh-6 {
   background: -webkit-gradient(linear, left top, left bottom, from(#bbbdc0), color-stop(#f6f6f6), to(#f6f6f6));
   background: linear-gradient(#bbbdc0, #f6f6f6, #f6f6f6);
@@ -328,5 +492,10 @@ html {
 .vehicle-product:hover > #veh-6 {
   background: -webkit-gradient(linear, left top, left bottom, from(#33569C), color-stop(#f6f6f6), to(#f6f6f6));
   background: linear-gradient(#33569C, #f6f6f6, #f6f6f6);
+}
+
+.delay-6 {
+  -webkit-animation-delay: 1.2s;
+          animation-delay: 1.2s;
 }
 /*# sourceMappingURL=main.css.map */

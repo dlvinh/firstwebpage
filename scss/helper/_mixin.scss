@@ -1,0 +1,11 @@
+// TAO MUI TEN Phia tren discoverySeciton.
+@mixin arrow($left,$right){
+    content: "";
+    border-bottom: 15px solid white;
+    border-right: 15px solid transparent;
+    border-left: 15px solid transparent;
+    position: absolute;
+    top: -15px; // mui ten co chieu cao 15 px
+    left: $left;
+    right: $right;
+}

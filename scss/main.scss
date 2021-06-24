@@ -6,10 +6,11 @@
 
 @import './base/reset';
 @import './helper/variable';
-
+@import './helper/mixin';
 @import './layout/header';
 @import './layout/vehicle';
-
+@import './layout/discover';
+@import './layout/search';
 
 // COMPONENTS
 @import './components/button';

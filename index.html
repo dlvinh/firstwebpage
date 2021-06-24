@@ -15,6 +15,9 @@
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 
     <link rel="stylesheet" href="./css/jquery.mCustomScrollbar.css">
+
+    <!-- Animate -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <!-- MAIN STYLE -->
     <link rel="stylesheet" href="./css/main.css">
 
@@ -49,27 +52,71 @@
                                 Owners<i class="fa fa-angle-down"></i>
                             </a>
                         </li>
-                        <li class="nav-item ">
-                            <a class="nav-link no-border" href="#">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link no-border" role="button" id="dropdownMenuLinkDiscoverSection"
+                                data-toggle="dropdown" aria-haspopup="true" href="#">
                                 Discover <i class="fa fa-angle-down"></i>
                             </a>
+                            <div class="dropdown-menu discoverySection"
+                                aria-labelledby="dropdownMenuLinkDiscoverSection">
+                                <div class="dropdown-menu-detail dropdown-item">
+                                    <div class="menu-left">
+                                        <h2>Technology</h2>
+                                        <ul>
+                                            <li><a href="">Honda Safety</a></li>
+                                            <li><a href="">Honda Sensing</a></li>
+                                            <li><a href="">How-to Video & Guides by Vehicle</a></li>
+                                            <li><a href="">Environmental Vehicle</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="menu-right">
+                                        <h3>Community</h3>
+                                        <ul>
+                                            <li><a href="">Auto Shows</a></li>
+                                            <li><a href="">Serial One</a></li>
+                                            <li><a href="">News & Events</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="dropdown-item">
+                                    <div class="social-icon-container">
+                                        <i class="fab fa-facebook"></i>
+                                        <i class="fab fa-twitter-square"></i>
+                                        <i class="fab fa-youtube"></i>
+                                        <i class="fab fa-google-plus"></i>
+                                        <i class="fab fa-instagram"></i>
+                                        <i class="fab fa-pinterest-p"></i>
+                                        <i class="fab fa-linkedin-in"></i>
+                                        <i class="fab fa-twitch"></i>
+                                    </div>
+                                </div>
+
+                            </div>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">English <i class="fa fa-angle-down"></i></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#"><i class="fa fa-search"></i></a>
+                            <a class="nav-link" href="#search-section" data-toggle="collapse" role="button"><i class="fa fa-search"></i></a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
+        <section id="search-section" class="collapse">
+            <form action="">
+                <i class="fa fa-search"></i>
+                <input type="text" placeholder="Search for anything">
+                <button class="btn btn-search">Search</button>
+            </form>
 
+        </section>
         <section id="vehicle">
             <section class="container-fluid container--config" id="vehicle-contain">
-                <div class="row nav-vehicle">
+                <div class="row">
                     <div class="col">
-                        <nav>
+                        <nav class="nav-vehicle animate__animated">
                             <ul>
                                 <li class="active">
                                     <a href="#" id="cars-nav">CARS</a>
@@ -97,7 +144,7 @@
                     </div>
                     <p>Close</p>
                 </div>
-                <div id="vehicle-list">
+                <div id="vehicle-list" class="animate__animated">
                     <div class="row">
                         <div class="col-12 pt-3">
                             <hr size="12" class="line">
@@ -283,7 +330,7 @@
                                 </div>
                             </div>
 
-                            <div class="vehicle-product col-sm-6 col-md-4" >
+                            <div class="vehicle-product col-sm-6 col-md-4">
                                 <div class="vehicle-img" id="veh-1">
                                     <img src="./img/xe-1.png" class="img-fluid" alt="">
                                     <img src="./img/xe-1-hover.png" class="img-fluid vehicle-hover" alt="">
@@ -453,6 +500,7 @@
                 </div>
             </section>
         </section>
+
     </header>
 
 
@@ -477,6 +525,10 @@
                 $("#vehicle-list").mCustomScrollbar({
                     theme: 'dark'
                 });
+                // Tao all delay- class cho vehicle product
+                $('.vehicle-product').each(function (index) {
+                    $(this).addClass(`delay-${index + 1}`);
+                });
             });
         })(jQuery);
 
@@ -491,41 +543,59 @@
         })
 
         var count = "";
-        var show = "";
-        $('#navbar > .nav-link').click(function(){
-            if (count === ""){
+        $('#navbar > .nav-link').click(function () {
+            console.log("count", count);
+            if (count === "") {
                 count = $(this).attr("id");
                 console.log(count);
                 $(this).addClass('active');
-                $('#vehicle').addClass("show-vehicle");
-                show = 1;
-            }else{
-                if (count == $(this).attr("id")){
-                    $(this).removeClass('active');
-                    if(show == 1){
-                        $("#vehicle").removeClass("show-vehicle");
-                        show =="";
-                    }else{
-                        $("#vehicle").addClass("show-vehicle");
-                    }
+                if (count === "vehicle-link") {
+                    $('#vehicle').addClass("show-vehicle");
+                    $('.nav-vehicle').addClass("animate__fadeInDown");
+                    $('#vehicle-list').addClass("animate__fadeInUp");
+                }
+            } else {
+                if (count === $(this).attr("id")) {
+                    $(this).removeClass("active");
                     count = "";
-                }else{
-                    $('#navbar > a').removeClass('active');
+                    $('.nav-vehicle').addClass("animate__fadeOutUp");
+                    $("#vehicle-list").addClass("animate__fadeOutDown")
+                    setTimeout(function () {
+                        $('.nav-vehicle').removeClass("animate__fadeOutUp");
+                        $('#vehicle').removeClass("show-vehicle");
+                        $("#vehicle-list").removeClass("animate__fadeOutDown");
+                    }, 300)
+
+                } else {
+                    $(`#vehicle-link`).removeClass("active");
+                    $(`#vehicle`).removeClass("show-vehicle");
                     $(this).addClass('active');
-                    count = $(this).attr("id");
-                    if (show == 1){
-                        $("#vehicle").removeClass("show-vehicle");
-                        show = "";
-                    }else{
-                        $("#vehicle").addClass("show-vehicle");
-                        show=1;
-                    }
-                   
-                    
-                   
+                    count = "";
                 }
             }
         })
+
+        /* 
+            Tao function cho nut close
+        */
+        $(".vehicle-cirle").click(function () {
+
+            $('.nav-vehicle').addClass("animate__fadeOutUp");
+            $("#vehicle-list").addClass("animate__fadeOutDown")
+            $('#navbar > .nav-link').removeClass('active');
+            setTimeout(function () {
+                $('.nav-vehicle').removeClass("animate__fadeOutUp");
+                $('#vehicle').removeClass("show-vehicle");
+                $("#vehicle-list").removeClass("animate__fadeOutDown");
+            }, 300)
+            count = "";
+        });
+
+        /* 
+         Tao hieu ung cho moi vehicle item
+        */
+        $('.vehicle-product').addClass('animate__animated animate__fadeInUp');
+
     </script>
 
 

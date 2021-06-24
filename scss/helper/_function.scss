@@ -16,4 +16,9 @@
     .vehicle-product:hover > #veh-#{$index}{
         background:linear-gradient($bg-color,$color-grey,$color-grey);
     }
+    // Create CSS for all delay class
+    .delay-#{$index}{
+        animation-delay: 0.2s * $index  ;
+    }
 }
+
