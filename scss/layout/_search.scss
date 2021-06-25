@@ -28,3 +28,34 @@
         /* CSS button search is conducted in _button.scss */
     }
 }
+
+#nav-search{
+    background-color: $color-blue-100;
+    padding: $padding-3 $padding-2;
+    form{
+        display: flex;
+        align-items: center;
+        i{
+            color: $color-blue-200;
+            font-size: $font-size-2;
+            height: fit-content; // Set heigh to use flex and align item centre
+            padding-right: $padding-1 ;
+        }
+        input{
+            border: none;
+            width: 90%;
+            height: 4.5rem;
+            background: white;
+            outline: none;
+            font-weight: 300;
+            font-size: $font-size-3;
+            color: $color-blue-200;
+            p
+            &::placeholder{
+                font-size: $font-size-3;
+                font-weight: 300;
+            }
+        }
+        /* CSS button search is conducted in _button.scss */
+    }
+}

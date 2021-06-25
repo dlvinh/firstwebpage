@@ -28,90 +28,120 @@
 <body>
     <!-- NAVBAR -->
     <header id="header w-100">
-        <nav class="navbar navbar-expand-lg" id="navbar">
+        <nav class="navbar navbar-expand-lg navbar-light" id="navbar">
             <!-- LOGO -->
-            <a class="nav-brand no-border" href="#">
-                <img src="img/logo.png" alt="">
-            </a>
-            <a class="nav-link" href="#" id="vehicle-link">
-                Vehicle <i class="fa fa-angle-down"></i>
-            </a>
-            <a class="nav-link" href="#" id="shopping-link">
-                Shoppings Tools <i class="fa fa-angle-down"></i>
-            </a>
-            <div class="header-right ml-auto d-flex align-items-center">
-                <!-- BURGER COLLAPSe -->
-                <div class="collapse navbar-collapse">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link no-border" href="#">
-                                <i class="fa fa-map-marker-alt"></i>Dealers</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link no-border" href="#">
-                                Owners<i class="fa fa-angle-down"></i>
-                            </a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link no-border" role="button" id="dropdownMenuLinkDiscoverSection"
-                                data-toggle="dropdown" aria-haspopup="true" href="#">
-                                Discover <i class="fa fa-angle-down"></i>
-                            </a>
-                            <div class="dropdown-menu discoverySection"
-                                aria-labelledby="dropdownMenuLinkDiscoverSection">
-                                <div class="dropdown-menu-detail dropdown-item">
-                                    <div class="menu-left">
-                                        <h2>Technology</h2>
-                                        <ul>
-                                            <li><a href="">Honda Safety</a></li>
-                                            <li><a href="">Honda Sensing</a></li>
-                                            <li><a href="">How-to Video & Guides by Vehicle</a></li>
-                                            <li><a href="">Environmental Vehicle</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="menu-right">
-                                        <h3>Community</h3>
-                                        <ul>
-                                            <li><a href="">Auto Shows</a></li>
-                                            <li><a href="">Serial One</a></li>
-                                            <li><a href="">News & Events</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
+            <ul class="navbar nav" id="navbar-left">
+                <li>
+                    <a class="nav-brand no-border" href="#">
+                        <img src="img/logo.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#" id="vehicle-link">
+                       <span class="d-block d-lg-none text-center"><i class="fa fa-car"></i></span>
+                        Vehicle 
+                        <span class="d-none d-lg-inline"><i class="fa fa-angle-down"></i></span>
+                    </a>
+                </li>
+                <li class="d-block d-lg-none">
+                    <a class="nav-link" href="#">
+                        <span class="d-block d-lg-none text-center"><i class="fa fa-map-marker-alt"></i></span>
+                        Dealers
+                    </a>
+                </li>
+                <li class="d-none d-lg-block">
+                    <a class="nav-link" href="#" id="shopping-link">
+                        Shoppings Tools <i class="fa fa-angle-down"></i>
+                    </a>
+                </li>
+            </ul>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarBurger"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-                                <div class="dropdown-item">
-                                    <div class="social-icon-container">
-                                        <i class="fab fa-facebook"></i>
-                                        <i class="fab fa-twitter-square"></i>
-                                        <i class="fab fa-youtube"></i>
-                                        <i class="fab fa-google-plus"></i>
-                                        <i class="fab fa-instagram"></i>
-                                        <i class="fab fa-pinterest-p"></i>
-                                        <i class="fab fa-linkedin-in"></i>
-                                        <i class="fab fa-twitch"></i>
-                                    </div>
+            <!-- BURGER COLLAPSE -->
+            <div class="collapse navbar-collapse" id="navbarBurger">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item d-none d-lg-block">
+                        <a class="nav-link no-border" href="#">
+                            <i class="fa fa-map-marker-alt"></i>Dealers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link no-border" href="#">
+                            Owners<i class="fa fa-angle-down"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link no-border" role="button" id="dropdownMenuLinkDiscoverSection"
+                            data-toggle="dropdown" aria-haspopup="true" href="#">
+                            Discover <i class="fa fa-angle-down"></i>
+                        </a>
+                        <div class="dropdown-menu discoverySection animate__animated animate__fadeInDown" aria-labelledby="dropdownMenuLinkDiscoverSection">
+                            <div class="dropdown-menu-detail dropdown-item">
+                                <div class="menu-left">
+                                    <h2>Technology</h2>
+                                    <ul>
+                                        <li><a href="">Honda Safety</a></li>
+                                        <li><a href="">Honda Sensing</a></li>
+                                        <li><a href="">How-to Video & Guides by Vehicle</a></li>
+                                        <li><a href="">Environmental Vehicle</a></li>
+                                    </ul>
                                 </div>
-
+                                <div class="menu-right">
+                                    <h3>Community</h3>
+                                    <ul>
+                                        <li><a href="">Auto Shows</a></li>
+                                        <li><a href="">Serial One</a></li>
+                                        <li><a href="">News & Events</a></li>
+                                    </ul>
+                                </div>
                             </div>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">English <i class="fa fa-angle-down"></i></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#search-section" data-toggle="collapse" role="button"><i class="fa fa-search"></i></a>
-                        </li>
-                    </ul>
-                </div>
+
+                            <div class="dropdown-item">
+                                <div class="social-icon-container">
+                                    <i class="fab fa-facebook"></i>
+                                    <i class="fab fa-twitter-square"></i>
+                                    <i class="fab fa-youtube"></i>
+                                    <i class="fab fa-google-plus"></i>
+                                    <i class="fab fa-instagram"></i>
+                                    <i class="fab fa-pinterest-p"></i>
+                                    <i class="fab fa-linkedin-in"></i>
+                                    <i class="fab fa-twitch"></i>
+                                </div>
+                            </div>
+
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">English <i class="fa fa-angle-down"></i></a>
+                    </li>
+                    <li class="nav-item d-none d-lg-block">
+                        <a class="nav-link" href="#search-section" data-toggle="collapse" role="button"><i
+                                class="fa fa-search"></i></a>
+                    </li>
+                    <li class="nav-item d-block d-lg-none"> 
+                        <div id="nav-search" class="nav-link">
+                            <form action="">
+                                <button class="btn btn-search">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                                <input type="text" placeholder="Search for anything">
+                            </form>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </nav>
+
         <section id="search-section" class="collapse">
             <form action="">
                 <i class="fa fa-search"></i>
                 <input type="text" placeholder="Search for anything">
                 <button class="btn btn-search">Search</button>
             </form>
-
         </section>
+
         <section id="vehicle">
             <section class="container-fluid container--config" id="vehicle-contain">
                 <div class="row">
@@ -543,7 +573,7 @@
         })
 
         var count = "";
-        $('#navbar > .nav-link').click(function () {
+        $('#navbar-left li > .nav-link').click(function () {
             console.log("count", count);
             if (count === "") {
                 count = $(this).attr("id");
@@ -596,6 +626,11 @@
         */
         $('.vehicle-product').addClass('animate__animated animate__fadeInUp');
 
+
+        /* 
+            RESPONSIVE ANIMATION
+        */
+        
     </script>
 
 

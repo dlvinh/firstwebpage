@@ -1,0 +1,49 @@
+#navbar{
+    li{
+        .nav-link{
+            @media screen and (max-width: 992px) {
+        padding: $padding-1 $padding-2;            
+            }
+        }
+    }
+    .navbar-collapse{
+        @media  screen and (max-width:992px) {
+            border-top: $border-2;
+        }
+    }
+    .discoverySection {
+        @media screen and (max-width: 992px){
+            padding: $padding-3;
+            // USE MIXIN TO CREATE ARROW
+            &::before{
+               display: none;
+            }
+        }
+    }
+  
+}
+#search-section{
+    @media screen and (max-width: 992px){
+        display: none;
+    }
+}
+
+#vehicle{
+    @media screen and (max-width:992px) {
+        #vehicle-contain{
+            .nav-vehicle{
+                ul{
+                    li{
+                        a{
+                            border: none;
+                        }
+                    }
+                }
+            }
+        }
+        #vehicle-close{
+            display: none;
+        }
+    }
+   
+}
