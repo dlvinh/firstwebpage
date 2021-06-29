@@ -1,0 +1,71 @@
+.intro {
+    margin-top: $margin-up-3;
+    .intro-container {
+        padding: 0 $padding-7;
+        /* INTRO LEFT */
+        .intro-left {
+            background: url("../../img/our-vehicle-intro-1.jpg");
+            background-color: $color-black;
+            text-align: center;
+            position: relative;
+            padding: 0;
+            background-position: center center;
+            background-size: cover;
+            height: 400px;
+            background-clip: content-box;
+            padding: 0 $padding-3 ;
+            .intro-left-content {
+                position: absolute;
+                top:50%;
+                width: 80%;
+                left: 10%;
+                color: $color-white;
+                font-size: 1.4rem;
+                h4 {
+                    font-weight: $font-weight-bold;
+                    margin-bottom: $mg-2;
+                }
+                p {
+                    font-weight: $font-weight-300;
+                    margin-bottom: $mg-3;
+                }
+            }
+        }
+
+        .intro-right {
+            background: url("../../img/our-vehicles-intro-2.jpg");
+            background-color: $color-black;
+            text-align: left;
+            position: relative;
+            padding: 0;
+            background-position: center center;
+            background-size: cover;
+            height: 400px;
+            padding: 0 $padding-3 ;
+            background-clip: content-box;
+            .intro-right-content {
+                position: absolute;
+                top: 45%;
+                padding: $padding-4;
+                color: $color-white;
+                font-size: 1.4rem;
+                text-transform: uppercase;
+                width: 42%;
+                margin-left: $mg-2;
+                h4{
+                    padding: $padding-1 $padding-2;
+                    width: fit-content;
+                    background-color: $color-blue-overlay;
+                    font-weight: $font-weight-bold;
+                    letter-spacing: 1.5px;
+                    margin-bottom: $mg-2;
+                }
+                p{
+                    font-weight: $font-weight-bold;
+                    font-size: $font-size-1;
+                    margin-bottom: $mg-3;
+                }
+            }
+        }
+    }
+}

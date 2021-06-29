@@ -1,0 +1,22 @@
+#advertisement
+{
+    background-color: $color-grey;
+
+    .intro{
+        margin-top: 0;
+        .intro-left{
+            background-image: url("../../img/intro-3.jpg");
+            background-position: center center;
+        }
+        .intro-right{
+            background-image: url('../../img/intro-4.jpg');
+            background-position: center center;
+        }
+    }
+}
+
+
+.padding-col{
+    padding: 0 $padding-1;
+    margin-bottom: $mg-2;
+}

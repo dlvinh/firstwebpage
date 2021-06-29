@@ -22,7 +22,7 @@
     }
   
 }
-#search-section{
+#top-search{
     @media screen and (max-width: 992px){
         display: none;
     }
@@ -44,6 +44,90 @@
         #vehicle-close{
             display: none;
         }
-    }
-   
+    }  
 }
+
+/* 
+    CAROUSEL
+*/
+@media screen and (max-width:992px){
+    #swiper-carousel{
+        .swiper-container{
+
+            .swiper-wrapper{
+                height: 93%;
+                .swiper-slide{
+                    height: 100%;
+                    // Change height
+
+                }
+            }
+            .swiper-pagination-bullet{
+                width: 12px;
+                height: 12px;
+                background-color: $color-blue-100;
+            }
+            .swiper-button-prev, .swiper-button-next{
+                top: 45%;
+                background-color: $color-white;
+                padding: $padding-6 $padding-5;
+                border-radius: 0.8rem;
+            }
+            .button-swiper{
+                text-align: center;
+                width: 100%;
+                position: absolute;
+                z-index: 9;
+                bottom: 15%;
+            }
+        }
+    }
+}
+
+/* 
+    INTRO 
+*/
+@media screen and (max-width:992px) {
+    .intro{
+        .intro-container{
+            .intro-left{
+                margin-bottom: $mg-3;
+                height: 500px;
+            }
+        }
+    }
+}
+
+/* 
+    OUR-VEHICLE
+*/
+@media screen and (max-width:992px) {
+    #our-vehicle{
+        .carousel-inner{
+            .carousel-caption-config{
+                font-size: $font-size-1 - 0.2rem;
+                .carousel-caption-detail{
+                    .carousel-detail-content{
+                        h2{
+                            font-size: $font-size-3;  
+                        }
+                    }
+                }
+                
+            }
+        }
+        .carousel-indicators-config{
+            display: flex;
+            align-items: center;
+            width: 100%;
+        }
+        .carousel-indicators-xs{
+            display: none;
+        }
+        
+    }
+}
+
+/* 
+    FOOTER-TOP RESPONSIVE
+*/

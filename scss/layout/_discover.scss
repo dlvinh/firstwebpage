@@ -31,19 +31,21 @@
             
         }
     }
-    .social-icon-container{
-        display: flex;
-        justify-content: space-around;
-        i{
-            width: 30px;
-            height: 30px;
-            border-radius: 50%;
-            background-color: $color-blue-200;
-            color: $color-white;
-            text-align: center;
-            line-height: 30px;
-            font-size: 15px;
-           
-        }
+
+}
+
+.social-icon-container{
+    display: flex;
+    justify-content: space-around;
+    i{
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: $color-blue-200;
+        color: $color-white;
+        text-align: center;
+        line-height: 30px;
+        font-size: 15px;
+       
     }
 }

@@ -1,4 +1,4 @@
-#search-section{
+.search-section{
     background-color: $color-grey;
     padding: $padding-1 $padding-6;
     form{
@@ -57,5 +57,24 @@
             }
         }
         /* CSS button search is conducted in _button.scss */
+    }
+}
+
+/* 
+    Because of in max-width: 992, style of bottom search will have the same style of btn-search class  in 992px
+    => this class will overwrite the new style of the whole btn-search in bottom-search section 
+*/
+#bottom-search{
+    background-color: $color-white;
+    form{
+        justify-content: center;
+        input{
+            width: 70%;
+        }
+    }
+    .btn-search{
+        border: 2px solid $color-blue-200;
+        border-radius: 40px;
+        padding: $padding-1 $padding-5;
     }
 }

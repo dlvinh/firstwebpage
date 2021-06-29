@@ -1,6 +1,42 @@
 
-#search-section{
+#top-search{
     @media screen and (max-width: 992px){
         display: none;
+    }
+}
+
+/* 
+    INTRO
+*/
+@media screen and (max-width: 1400px) {
+    .intro{
+        .intro-container{
+            .intro-left, .intro-right{
+                height: 500px;
+            }
+        }
+    }
+}
+@media screen {
+    #our-vehicle{
+        .carousel-indicators-config{
+            display: flex;
+            align-items: center;
+        }
+        .carousel-indicators-xs{
+            display: none;
+        }
+    }
+}
+@media (min-width:991.88px) and (max-width:1280px) {
+    #our-vehicle{
+        .carousel-indicators-config{
+            display: flex;
+            align-items: center;
+            width: 65%;
+        }
+        .carousel-indicators-xs{
+            display: none;
+        }
     }
 }

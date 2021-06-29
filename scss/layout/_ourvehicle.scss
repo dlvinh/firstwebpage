@@ -1,0 +1,68 @@
+#our-vehicle {
+    margin: $mg-4 0 0 0;
+    h1 {
+        color: $color-darkblue-200;
+        font-size: $font-size-4;
+        margin-bottom: $mg-3;
+    }
+    .carousel-inner {
+        height: 700px;
+        .carousel-item{
+            height: 100%;
+        }
+        .carousel-caption-config {
+            position: absolute;
+            width: 40%;
+            top: 20%;
+            left: 5%;
+            font-size: $font-size-1;
+            color: $color-white;
+            font-weight: $font-weight-normal;
+            > p:first-child {
+                // direct children of carousel-caption-config
+                font-weight: $font-weight-bold;
+                margin: 0;
+                span {
+                    font-weight: $font-weight-normal;
+                }
+            }
+
+            img {
+                transform: translateX($padding-2 * -1);
+            }
+            .carousel-caption-detail {
+                display: flex;
+                justify-content: space-around;
+                
+                .carousel-detail-content {
+                    h2 {
+                        font-weight: $font-weight-300;
+                        font-size: $font-size-5;
+                    }
+                    p {
+                        font-size: $font-size-1;
+                        font-weight: $font-weight-bold;
+                    }
+                }
+            }
+        }
+        .carousel-caption-footer {
+            width: 50%;
+            position: absolute;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            bottom: 0;
+            left: 0;
+            border-top: 0.15rem solid #a8a7a7;
+            a {
+                font-size: $font-size-1;
+                font-weight: $font-weight-bold;
+                color: $color-white;
+            }
+        }
+    }
+}
+.transform-1{
+    transform: rotate(-180deg);
+}

@@ -1,0 +1,55 @@
+/* 
+ -------------- CUSTOMISE BOOSTRAP ------------
+*/
+#our-vehicle{
+    .carousel-control-prev, .carousel-control-next{
+        width: 5%;
+        i{
+            font-size: $font-size-5;
+            top: 45%;
+            background-color: $color-darkblue-200;
+            padding: $padding-4 $padding-3;
+            border-radius: 0.9rem;
+        }
+    }
+    // Change the navigation bullet in to text navigation
+    .carousel-indicators-config{
+        list-style: none;
+        text-align: center;
+        padding: 0;
+        width: 50%;
+        display: flex;
+        justify-content: space-around;
+        margin: $mg-1 auto;
+
+        li{
+            color: $color-darkblue-200;
+            font-size: $font-size-1;
+            font-weight: $font-weight-bold;
+            border-radius: 4rem;
+            padding: $padding-1 $padding-2;
+            cursor: pointer;
+            // CREATE up-side-down arrow for navigator
+        }
+        li.active{
+            color:$color-white;
+            background-color: $color-blue-200;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            &::before{
+                content: "";
+                // CReate arrow with border
+                border-top: 10px solid $color-white;
+                border-right: 10px solid transparent;
+                border-left: 10px solid transparent;
+                position: absolute;
+                bottom: 15px * -1;
+                z-index: 3;
+            }
+            &::after{
+                content:none;
+            }
+        }
+    }
+}

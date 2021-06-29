@@ -16,6 +16,8 @@
 
     <link rel="stylesheet" href="./css/jquery.mCustomScrollbar.css">
 
+    <!-- SWIPER CAROUSEL -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <!-- Animate -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <!-- MAIN STYLE -->
@@ -38,8 +40,8 @@
                 </li>
                 <li>
                     <a class="nav-link" href="#" id="vehicle-link">
-                       <span class="d-block d-lg-none text-center"><i class="fa fa-car"></i></span>
-                        Vehicle 
+                        <span class="d-block d-lg-none text-center"><i class="fa fa-car"></i></span>
+                        Vehicle
                         <span class="d-none d-lg-inline"><i class="fa fa-angle-down"></i></span>
                     </a>
                 </li>
@@ -77,7 +79,8 @@
                             data-toggle="dropdown" aria-haspopup="true" href="#">
                             Discover <i class="fa fa-angle-down"></i>
                         </a>
-                        <div class="dropdown-menu discoverySection animate__animated animate__fadeInDown" aria-labelledby="dropdownMenuLinkDiscoverSection">
+                        <div class="dropdown-menu discoverySection animate__animated animate__fadeInDown"
+                            aria-labelledby="dropdownMenuLinkDiscoverSection">
                             <div class="dropdown-menu-detail dropdown-item">
                                 <div class="menu-left">
                                     <h2>Technology</h2>
@@ -117,10 +120,10 @@
                         <a class="nav-link" href="#">English <i class="fa fa-angle-down"></i></a>
                     </li>
                     <li class="nav-item d-none d-lg-block">
-                        <a class="nav-link" href="#search-section" data-toggle="collapse" role="button"><i
+                        <a class="nav-link" href="#top-search" data-toggle="collapse" role="button"><i
                                 class="fa fa-search"></i></a>
                     </li>
-                    <li class="nav-item d-block d-lg-none"> 
+                    <li class="nav-item d-block d-lg-none">
                         <div id="nav-search" class="nav-link">
                             <form action="">
                                 <button class="btn btn-search">
@@ -134,7 +137,7 @@
             </div>
         </nav>
 
-        <section id="search-section" class="collapse">
+        <section id="top-search" class="collapse search-section">
             <form action="">
                 <i class="fa fa-search"></i>
                 <input type="text" placeholder="Search for anything">
@@ -533,14 +536,666 @@
 
     </header>
 
+    <!-- FIRST CAROUSEL -->
+    <section id="swiper-carousel">
+        <div class="swiper-container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide slider-1">
+                    <!-- All images is going to be attach in css -->
+                </div>
+                <div class="swiper-slide slider-2">
+                    <!-- All images is going to be attach in css -->
+                </div>
+                <div class="swiper-slide slider-3">
+                    <!-- All images is going to be attach in css -->
+                </div>
+                <div class="swiper-slide slider-4">
+                    <!-- All images is going to be attach in css -->
+                </div>
+                ...
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <div class="button-swiper">
+                <button class="btn btn-carousel">Explore</button>
+            </div>
+
+        </div>
+    </section>
+    <!-- INTRO -->
+    <section class="intro">
+        <div class="intro-container container-fluid">
+            <div class="row">
+                <div class="col-12 col-lg-6 intro-left">
+                    <div class="intro-left-content">
+                        <h4>Future Vehicles</h4>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis totam beatae iste quod enim in
+                            dignissimos. Quisquam voluptate blanditiis quaerat, corrupti provident molestiae animi et
+                            saepe alias fugit, doloremque voluptas!</p>
+                        <button class="btn btn-go">GO</button>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 intro-right">
+                    <div class="intro-right-content">
+                        <h4>Build & PRICE</h4>
+                        <p>Personalise 2018 ACCORD SEND to make it your own</p>
+                        <button class="btn btn-build">Build my vehicle</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="our-vehicle">
+        <h1 class="display-1 text-center">
+            Our Vehicles
+        </h1>
+        <div id="carouselOurVehicle" class="carousel">
+            <!-- In order to delete the navigation bulllet point in boostrap carousel, we delete class "carousel-indicators" -->
+            <ol class="carousel-indicators-config">
+                <li data-target="#carouselOurVehicle" data-slide-to="0" class="active">CAR</li>
+                <li data-target="#carouselOurVehicle" data-slide-to="1">CROSSOVER & SUV</li>
+                <li data-target="#carouselOurVehicle" data-slide-to="2">MINIVAN & TRUCK</li>
+                <li data-target="#carouselOurVehicle" data-slide-to="3">ENVIRONMENT</li>
+                <li data-target="#carouselOurVehicle" data-slide-to="4">FUTURE</li>
+            </ol>
+
+            <!-- This scope wil trigger when it meet the size and it use the .carousel-indicator-xs in css style  -->
+            <ol class="carousel-indicators-xs">
+                <div class="carousel-indicator-xs-header">
+                    <h1>Vehicle Categories <span class="selection">CARS</span></h1>
+                    <p><i class="fa fa-angle-down"></i></p>
+                </div>
+                <div class="carousel-indicator-xs-container">
+                    <li data-target="#carouselOurVehicle" data-slide-to="0" class="active">CARS</li>
+                    <li data-target="#carouselOurVehicle" data-slide-to="1">CROSSOVER & SUV</li>
+                    <li data-target="#carouselOurVehicle" data-slide-to="2">MINIVAN & TRUCK</li>
+                    <li data-target="#carouselOurVehicle" data-slide-to="3">ENVIRONMENT</li>
+                    <li data-target="#carouselOurVehicle" data-slide-to="4">FUTURE</li>
+                </div>
+
+            </ol>
+
+            <div class="carousel-inner">
+                <div class="carousel-item carousel-1 active">
+                    <!-- <div>
+                        <img class="d-none d-md-block w-100 img-fluid" src="./img/slider-1.jpg" alt="First slide">
+                        <img class="d-block d-md-none w-100 img-fluid" src="./img/slider-1-xs.jpg" alt="First Slide">
+                    </div> -->
+
+                    <div class="carousel-caption-config">
+                        <p>
+                            CAR 1
+                            <span>/12</span>
+                        </p>
+                        <img src="./img/civic-logo.jpg" alt="" class="img-fluid">
+                        <p class="d-none d-md-block m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Debitis libero dolore aut quidem perspiciatis delectus consequatur voluptatem et? Rem
+                            accusamus assumenda, veritatis quasi nihil ullam voluptate consequuntur quibusdam aliquam
+                            doloribus.
+                        </p>
+                        <div class="carousel-caption-detail">
+                            <div class="carousel-detail-content">
+                                <h2>$23,570</h2>
+                                <p>STARTING MSRP</p>
+                            </div>
+                            <div class="carousel-detail-content">
+                                <h2>38/30</h2>
+                                <p>
+                                    HWY/CITY MPG RATING
+                                </p>
+                            </div>
+                        </div>
+                        <button class="btn btn-carousel btn-caption">EXPLORE</button>
+                        <button class="btn btn-build btn-caption">BUILD</button>
+                    </div>
+
+                    <div class="carousel-caption-footer">
+                        <a href="#">EXPLORE HONDA CIVIC TYPE R ></a>
+                        <img src="./img/accord-family-vehicles-2x.png" alt="" class="img-fluid d-none d-md-block">
+                    </div>
+
+                </div>
+                <div class="carousel-item carousel-2">
+                    <!-- <div>
+                        <img class="d-none d-md-block w-100 img-fluid" src="./img/slider-2.jpg" alt="First slide">
+                        <img class="d-block d-md-none w-100 img-fluid" src="./img/slider-2-xs.jpg" alt="First Slide">
+                    </div> -->
+
+                    <div class="carousel-caption-config">
+                        <p>
+                            CAR 1
+                            <span>/12</span>
+                        </p>
+                        <img src="./img/civic-logo.jpg" alt="" class="img-fluid">
+                        <p class="d-none d-md-block m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Debitis libero dolore aut quidem perspiciatis delectus consequatur voluptatem et? Rem
+                            accusamus assumenda, veritatis quasi nihil ullam voluptate consequuntur quibusdam aliquam
+                            doloribus.
+                        </p>
+                        <div class="carousel-caption-detail">
+                            <div class="carousel-detail-content">
+                                <h2>$23,570</h2>
+                                <p>STARTING MSRP</p>
+                            </div>
+                            <div class="carousel-detail-content">
+                                <h2>38/30</h2>
+                                <p>
+                                    HWY/CITY MPG RATING
+                                </p>
+                            </div>
+                        </div>
+                        <button class="btn btn-carousel btn-caption">EXPLORE</button>
+                        <button class="btn btn-build btn-caption">BUILD</button>
+                    </div>
+
+                    <div class="carousel-caption-footer">
+                        <a href="#">EXPLORE HONDA CIVIC TYPE R ></a>
+                        <img src="./img/accord-family-vehicles-2x.png" alt="" class="img-fluid d-none d-md-block">
+                    </div>
+                </div>
+
+                <div class="carousel-item carousel-3">
+                    <!-- <div>
+                        <img class="d-none d-md-block w-100 img-fluid" src="./img/slider-3.jpg" alt="First slide">
+                        <img class="d-block d-md-none w-100 img-fluid" src="./img/slider-3-xs.jpg" alt="First Slide">
+                    </div> -->
+
+                    <div class="carousel-caption-config">
+                        <p>
+                            CAR 1
+                            <span>/12</span>
+                        </p>
+                        <img src="./img/civic-logo.jpg" alt="" class="img-fluid">
+                        <p class="d-none d-md-block m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Debitis libero dolore aut quidem perspiciatis delectus consequatur voluptatem et? Rem
+                            accusamus assumenda, veritatis quasi nihil ullam voluptate consequuntur quibusdam aliquam
+                            doloribus.
+                        </p>
+                        <div class="carousel-caption-detail">
+                            <div class="carousel-detail-content">
+                                <h2>$23,570</h2>
+                                <p>STARTING MSRP</p>
+                            </div>
+                            <div class="carousel-detail-content">
+                                <h2>38/30</h2>
+                                <p>
+                                    HWY/CITY MPG RATING
+                                </p>
+                            </div>
+                        </div>
+                        <button class="btn btn-carousel btn-caption">EXPLORE</button>
+                        <button class="btn btn-build btn-caption">BUILD</button>
+                    </div>
+
+                    <div class="carousel-caption-footer">
+                        <a href="#">EXPLORE HONDA CIVIC TYPE R ></a>
+                        <img src="./img/accord-family-vehicles-2x.png" alt="" class="img-fluid d-none d-md-block">
+                    </div>
+                </div>
+
+                <div class="carousel-item carousel-4">
+                    <!-- <div>
+                        <img class="d-none d-md-block w-100 img-fluid" src="./img/slider-4.jpg" alt="First slide">
+                        <img class="d-block d-md-none w-100 img-fluid" src="./img/slider-4-xs.jpg" alt="First Slide">
+                    </div> -->
+
+                    <div class="carousel-caption-config">
+                        <p>
+                            CAR 1
+                            <span>/12</span>
+                        </p>
+                        <img src="./img/civic-logo.jpg" alt="" class="img-fluid">
+                        <p class="d-none d-md-block m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Debitis libero dolore aut quidem perspiciatis delectus consequatur voluptatem et? Rem
+                            accusamus assumenda, veritatis quasi nihil ullam voluptate consequuntur quibusdam aliquam
+                            doloribus.
+                        </p>
+                        <div class="carousel-caption-detail">
+                            <div class="carousel-detail-content">
+                                <h2>$23,570</h2>
+                                <p>STARTING MSRP</p>
+                            </div>
+                            <div class="carousel-detail-content">
+                                <h2>38/30</h2>
+                                <p>
+                                    HWY/CITY MPG RATING
+                                </p>
+                            </div>
+                        </div>
+                        <button class="btn btn-carousel btn-caption">EXPLORE</button>
+                        <button class="btn btn-build btn-caption">BUILD</button>
+                    </div>
+
+                    <div class="carousel-caption-footer">
+                        <a href="#">EXPLORE HONDA CIVIC TYPE R ></a>
+                        <img src="./img/accord-family-vehicles-2x.png" alt="" class="img-fluid d-none d-md-block">
+                    </div>
+                </div>
+
+                <div class="carousel-item carousel-5">
+
+                    <!-- <div>
+                        <img class="d-none d-md-block w-100 img-fluid" src="./img/slider-5.jpg" alt="First slide">
+                        <img class="d-block d-md-none w-100 img-fluid" src="./img/slider-5-xs.jpg" alt="First Slide">
+                    </div> -->
+
+                    <div class="carousel-caption-config">
+                        <p>
+                            CAR 1
+                            <span>/12</span>
+                        </p>
+                        <img src="./img/civic-logo.jpg" alt="" class="img-fluid">
+                        <p class="d-none d-md-block m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Debitis libero dolore aut quidem perspiciatis delectus consequatur voluptatem et? Rem
+                            accusamus assumenda, veritatis quasi nihil ullam voluptate consequuntur quibusdam aliquam
+                            doloribus.
+                        </p>
+                        <div class="carousel-caption-detail">
+                            <div class="carousel-detail-content">
+                                <h2>$23,570</h2>
+                                <p>STARTING MSRP</p>
+                            </div>
+                            <div class="carousel-detail-content">
+                                <h2>38/30</h2>
+                                <p>
+                                    HWY/CITY MPG RATING
+                                </p>
+                            </div>
+                        </div>
+                        <button class="btn btn-carousel btn-caption">EXPLORE</button>
+                        <button class="btn btn-build btn-caption">BUILD</button>
+                    </div>
+
+                    <div class="carousel-caption-footer">
+                        <a href="#">EXPLORE HONDA CIVIC TYPE R ></a>
+                        <img src="./img/accord-family-vehicles-2x.png" alt="" class="img-fluid d-none d-md-block">
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselOurVehicle" role="button" data-slide="prev">
+                <i class="fa fa-angle-left"></i>
+            </a>
+            <a class="carousel-control-next" href="#carouselOurVehicle" role="button" data-slide="next">
+                <i class="fa fa-angle-right"></i>
+            </a>
+        </div>
+    </section>
+
+    <section id="vehicle-function">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-3 padding-col">
+                    <div class="function-detail function-img-1">
+                        <div class="content">
+                            <h3>Build & Price</h3>
+                            <p>Customise a honda vehicle to make your very own</p>
+                            <button class="btn btn-go">GO</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-3 padding-col">
+                    <div class="function-detail function-img-2">
+                        <div class="content">
+                            <h3>Build & Price</h3>
+                            <p>Customise a honda vehicle to make your very own</p>
+                            <button class="btn btn-go">GO</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-3 padding-col">
+                    <div class="function-detail function-img-3">
+                        <div class="content">
+                            <h3>Build & Price</h3>
+                            <p>Customise a honda vehicle to make your very own</p>
+                            <button class="btn btn-go">GO</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-3 padding-col">
+                    <div class="function-detail function-img-4">
+                        <div class="content">
+                            <h3>Build & Price</h3>
+                            <p>Customise a honda vehicle to make your very own</p>
+                            <button class="btn btn-go">GO</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <a href="#" class="scrollup"><a href="#" class="d-none">Scroll</a></a>
+    <section id="advertisement">
+        <div class="intro">
+            <div class="intro-container container-fluid">
+                <div class="row">
+                    <div class="col-12 col-lg-6 intro-left">
+                        <div class="intro-left-content">
+                            <h4>Future Vehicles</h4>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis totam beatae iste quod
+                                enim in
+                                dignissimos. Quisquam voluptate blanditiis quaerat, corrupti provident molestiae animi
+                                et
+                                saepe alias fugit, doloremque voluptas!</p>
+                            <button class="btn btn-go">GO</button>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 intro-right">
+                        <div class="intro-right-content">
+                            <h4>Build & PRICE</h4>
+                            <p>Personalise 2018 ACCORD SEND to make it your own</p>
+                            <button class="btn btn-build">Build my vehicle</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <section id="news">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <div class="news-header">
+                        <h1>Discover Honda</h1>
+                        <p>Explore the world of Honda through our lastest news, events and videos.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="news-bottom">
+                <div class="row">
+                    <!-- ITEM -->
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-4 padding-col">
+                        <div class="news-item news-background-1">
+                            <div class="news-item-content">
+                                <h2>2017 KBB.com Most Awarded Brand</h2>
+                                <p>With more than two dozen branches and individual awards, Kelly Blue Book's KBB.com
+                                    has
+                                    awared Honda as the most awarded brand of 2017</p>
+                                <a href="#">LEARN MORE</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ITEM -->
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-4 padding-col">
+                        <div class="news-item news-background-2">
+                            <div class="news-item-content">
+                                <h2>2017 KBB.com Most Awarded Brand</h2>
+                                <p>With more than two dozen branches and individual awards, Kelly Blue Book's KBB.com
+                                    has
+                                    awared Honda as the most awarded brand of 2017</p>
+                                <a href="#">LEARN MORE</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ITEM -->
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-4 padding-col">
+                        <div class="news-item news-background-3">
+                            <div class="news-item-content">
+                                <h2>2017 KBB.com Most Awarded Brand</h2>
+                                <p>With more than two dozen branches and individual awards, Kelly Blue Book's KBB.com
+                                    has
+                                    awared Honda as the most awarded brand of 2017</p>
+                                <a href="#">LEARN MORE</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ITEM -->
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-4 padding-col">
+                        <div class="news-item news-background-4">
+                            <div class="news-item-content">
+                                <h2>2017 KBB.com Most Awarded Brand</h2>
+                                <p>With more than two dozen branches and individual awards, Kelly Blue Book's KBB.com
+                                    has
+                                    awared Honda as the most awarded brand of 2017</p>
+                                <a href="#">LEARN MORE</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ITEM -->
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-4 padding-col">
+                        <div class="news-item news-background-5">
+                            <div class="news-item-content">
+                                <h2>2017 KBB.com Most Awarded Brand</h2>
+                                <p>With more than two dozen branches and individual awards, Kelly Blue Book's KBB.com
+                                    has
+                                    awared Honda as the most awarded brand of 2017</p>
+                                <a href="#">LEARN MORE</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ITEM -->
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-4 padding-col">
+                        <div class="news-item">
+                            <div class="news-social">
+                                <div class="social-logo">
+                                    <i class="fab fa-twitter"></i>
+                                </div>
+                                <div class="news-title">
+                                    <img src="./img/logo-honda.jpg" alt="">
+                                    <div>
+                                        <a>Honda <br> <a href="#">@Honda</a> </a>
+                                    </div>
+                                </div>
+                                <div class="news-social-status">
+                                    <p>You don't know what suprises can pop up on the road #RemoveTheDistractions when
+                                        you're behind the wheel. <a href="#"> http://t.co/UC7OLudVr4</a></p>
+                                    <a href="#">12:00 AM - 07 Apr 2018</a>
+                                </div>
+
+                                <div class="news-social-interaction">
+                                    <span><i class="fa fa-reply"></i></span>
+                                    <span><i class="fa fa-retweet"></i>10</span>
+                                    <span><i class="fa fa-heart"></i>23</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <button class="btn btn-carousel ">MORE NEWS & EVENTS</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="bottom-search" class="search-section">
+        <form action="">
+            <i class="fa fa-search"></i>
+            <input type="text" placeholder="Type anything">
+            <button class="btn btn-search">Search</button>
+        </form>
+    </section>
 
 
+    <footer id="footer-section">
+        <div class="container-fluid footer-container">
+            <div class="footer-top">
+                <div class="footer-detail">
+                    <div class="d-block d-md-none dropdown" data-toggle="collapse" data-target="#footer-vehicle">
+                        <h1>Vehicle <i class="fa fa-plus-circle"></i></h1>
+                    </div>
+                    <div class="d-none d-md-block">
+                        <h1>Vehicle</h1>
+                    </div>
+                    <ul id="footer-vehicle">
+                        <li>
+                            <a href="#">Accord Model</a>
+                        </li>
+                        <li>
+                            <a href="#">Civic Model</a>
+                        </li>
+                        <li>
+                            <a href="#">Civic Model</a>
+                        </li>
+                        <li>
+                            <a href="#">Civic Model</a>
+                        </li>
+                        <li>
+                            <a href="#">Civic Model</a>
+                        </li>
+                        <li>
+                            <a href="#">Civic Model</a>
+                        </li>
+                        <li>
+                            <a href="#">Civic Model</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-detail">
+                    <div class="d-block d-md-none dropdown" data-toggle="collapse" data-target="#footer-shoppingTools">
+                        <h1>Shopping Tools <i class="fa fa-plus-circle"></i></h1>
+                    </div>
+                    <div class="d-none d-md-block">
+                        <h1>Shopping Tools</h1>
+                    </div>
+                    <ul id="footer-shoppingTools">
+                        <li>
+                            <a href="#">Accord Model</a>
+                        </li>
+                        <li>
+                            <a href="#">Civic Model</a>
+                        </li>
+                        <li>
+                            <a href="#">Civic Model</a>
+                        </li>
+                        <li>
+                            <a href="#">Civic Model</a>
+                        </li>
+                        <li>
+                            <a href="#">Civic Model</a>
+                        </li>
+                        <li>
+                            <a href="#">Civic Model</a>
+                        </li>
+                        <li>
+                            <a href="#">Civic Model</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-detail">
+                    <h1>Vehicle</h1>
+                    <ul>
+                        <li>
+                            <a href="#">Accord Model</a>
+                        </li>
+                        <li>
+                            <a href="#">Civic Model</a>
+                        </li>
+                        <li>
+                            <a href="#">Civic Model</a>
+                        </li>
+                        <li>
+                            <a href="#">Civic Model</a>
+                        </li>
+                        <li>
+                            <a href="#">Civic Model</a>
+                        </li>
+                        <li>
+                            <a href="#">Civic Model</a>
+                        </li>
+                        <li>
+                            <a href="#">Civic Model</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-detail">
+                    <h1>Vehicle</h1>
+                    <ul>
+                        <li>
+                            <a href="#">Accord Model</a>
+                        </li>
+                        <li>
+                            <a href="#">Civic Model</a>
+                        </li>
+                        <li>
+                            <a href="#">Civic Model</a>
+                        </li>
+                        <li>
+                            <a href="#">Civic Model</a>
+                        </li>
+                        <li>
+                            <a href="#">Civic Model</a>
+                        </li>
+                        <li>
+                            <a href="#">Civic Model</a>
+                        </li>
+                        <li>
+                            <a href="#">Civic Model</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-detail">
+                    <h1>Vehicle</h1>
+                    <ul>
+                        <li>
+                            <a href="#">Accord Model</a>
+                        </li>
+                        <li>
+                            <a href="#">Civic Model</a>
+                        </li>
+                        <li>
+                            <a href="#">Civic Model</a>
+                        </li>
+                        <li>
+                            <a href="#">Civic Model</a>
+                        </li>
+                        <li>
+                            <a href="#">Civic Model</a>
+                        </li>
+                        <li>
+                            <a href="#">Civic Model</a>
+                        </li>
+                        <li>
+                            <a href="#">Civic Model</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+
+            <div class="footer-bottom">
+                <div class="bottom-left">
+                    <h1>Stay In Touch</h1>
+                    <div class="social-icon-container">
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-twitter-square"></i>
+                        <i class="fab fa-youtube"></i>
+                        <i class="fab fa-google-plus"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-pinterest-p"></i>
+                        <i class="fab fa-linkedin-in"></i>
+                        <i class="fab fa-twitch"></i>
+                    </div>
+                </div>
+                <div class="bottom-right">
+                    <p>Receive the latest news and exclusive updates</p>
+                    <button class="btn btn-go"><i class="fa fa-envelope"></i> STAY INFORMED</button>
+                </div>
+            </div>
+        </div>
+    </footer>
     <!-- JAVASCRIPT -->
 
     <!-- BOOSTRAP -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
         integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
@@ -548,6 +1203,10 @@
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
     <script src="./js/jquery.mCustomScrollbar.concat.min.js"></script>
+
+    <!-- SWIPER JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
     <!-- <script src="./js/jquery.mCustomScrollbar.js"></script> -->
     <script>
         (function ($) {
@@ -628,9 +1287,113 @@
 
 
         /* 
-            RESPONSIVE ANIMATION
+            TAO SWIPER CAROUSEL
+         */
+        const swiper = new Swiper('.swiper-container', {
+
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: 'true',
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            // And if we need scrollbar
+            // scrollbar: {
+            //     el: '.swiper-scrollbar',
+            // },
+        });
+
+        // Modifify class active of boostrap carousel
+        $('.carousel-indicators-config li').click(function () {
+            $('.carousel-indicators-config li').removeClass("active");
+            $(this).addClass('active');
+        })
+
+        // OUR VEHICLE NAVBAR MODIFICATION
+        $('.carousel-indicator-xs-header').click(function () {
+            $(".carousel-indicator-xs-header p").toggleClass('transform-1');
+            $('.carousel-indicator-xs-container').slideToggle();
+        })
+
+        $('.carousel-indicators-xs li').click(function () {
+            $('.carousel-indicator-xs-header .selection').html($(this).html());
+            $('.carousel-indicator-xs-container').slideUp();
+            $(".carousel-indicator-xs-header p").toggleClass('transform-1');
+        })
+
+        // Add function for arrow in our-vehicle carousel
+        var vehicle = 0;
+        $('.carousel-control-prev').click(function () {
+            $('.carousel-indicators-config li').removeClass("active");
+            if (vehicle == 0) {
+                vehicle = 4;
+            } else {
+                vehicle--;
+            }
+            $('.carousel-indicators-config li').each(function (index) {
+                if (index == vehicle) {
+                    $(this).addClass("active");
+                    console.log("prev");
+                    $('.carousel-indicator-xs-header h1 span').html($(this).html())
+                }
+            })
+
+        })
+
+        $('.carousel-control-next').click(function () {
+            $('.carousel-indicators-config li').removeClass("active");
+            if (vehicle == 4) {
+                vehicle = 0;
+            } else {
+                vehicle++;
+            }
+            $('.carousel-indicators-config li').each(function (index) {
+                if (index == vehicle) {
+                    $(this).addClass("active");
+                    console.log("next");
+                    $('.carousel-indicator-xs-header h1 span').html($(this).html())
+                }
+            })
+        })
+        /* 
+            BACK TO TOP
         */
-        
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 500) {
+                $('.scrollup').fadeIn();
+            } else {
+                $('.scrollup').fadeOut();
+            }
+        });
+
+        $('.scrollup').click(function () {
+            $("html, body").animate({ scrollTop: 0 }, 600);
+            return false;
+        });
+
+        /* 
+            RESPONSIVE USING JS
+        */
+       $(window).resize(function(){
+           var windowWidth = $(window).width();
+           if(windowWidth > 576){
+                $('.footer-detail ul').removeClass('collapse');
+           }else{
+            $('.footer-detail ul').addClass('collapse');
+           }
+       })
+
+
     </script>
 
 

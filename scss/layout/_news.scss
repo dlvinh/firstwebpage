@@ -1,0 +1,93 @@
+#news {
+    background-color: $color-grey;
+    .news-header {
+        text-align: center;
+        margin: $mg-4 0;
+        color: $color-darkblue-100;
+        h1 {
+            font-size: $font-size-4;
+            margin-bottom: $mg-1;
+            font-weight: $font-weight-300;
+        }
+        p {
+            font-size: $font-size-1;
+            font-weight: $font-weight-300;
+        }
+    }
+    .news-item{
+        height: 450px;
+        position: relative;
+        background-color:$color-white;
+        .news-item-content{
+            position: absolute;
+            bottom:10%;
+            text-align: center;
+            left: 0;
+            h2{
+                @include text($font-weight-bold, $mg-2);
+                font-size: $font-size-2;
+                color: $color-darkblue-200;
+            }
+            p{
+                @include text($font-weight-300, $mg-2);
+                font-size: $font-size-1;
+                padding: 0 $padding-3;
+            }
+            a{
+                color: $color-blue-200;
+                font-size: $font-size-1;
+                font-weight: $font-weight-bold;
+            }
+        }
+    }
+    .news-bottom{
+        padding: 0 $padding-7;
+    }
+    .news-social{
+        padding: $padding-3;
+        a{
+            color: $color-blue-200;
+        }
+        .social-logo{
+            text-align: right;
+            i{
+                font-size: $font-size-3;
+                color: $color-blue-200;
+            }
+        }
+        .news-title{
+            display: flex;
+            margin-top: $mg-6;
+            > img{
+                border-radius: 0.5rem;
+                margin-right: $mg-1;
+            }
+            > div{
+                display: inline;
+                font-size: $font-size-1;
+                a:first-child{
+                    font-weight: $font-weight-bold;
+                }
+            }
+        }
+        .news-social-status{
+            margin-top: $mg-2 ;
+            p{
+                font-size: $font-size-1;
+                color: $color-darkblue-200;
+            }
+
+        }
+        .news-social-interaction{
+            margin-top: $mg-2;
+            color: $color-blue-200;
+            font-size: $font-size-1;
+            span{
+                margin: 0 $mg-2;
+            }
+            span:first-child{
+                margin: 0;
+            }
+        }
+    }
+}

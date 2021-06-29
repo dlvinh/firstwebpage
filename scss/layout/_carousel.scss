@@ -1,0 +1,31 @@
+#swiper-carousel{
+    height: 750px;
+    background-color: $color-darkblue-200;
+    .swiper-container{
+        height: 500px;
+        .swiper-wrapper{
+            height: 93%;
+            .swiper-slide{
+                height: 100%;
+            }
+        }
+        .swiper-pagination-bullet{
+            width: 12px;
+            height: 12px;
+            background-color: $color-blue-100;
+        }
+        .swiper-button-prev, .swiper-button-next{
+            top: 45%;
+            background-color: $color-white;
+            padding: $padding-6 $padding-5;
+            border-radius: 0.8rem;
+        }
+        .button-swiper{
+            text-align: center;
+            width: 100%;
+            position: absolute;
+            z-index: 9;
+            bottom: 15%;
+        }
+    }
+}

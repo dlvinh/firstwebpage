@@ -25,7 +25,7 @@
         }
     }
 }
-#search-section{
+#top-search{
     @media screen and (max-width: 768px){
         display: none;
     }
@@ -52,4 +52,173 @@
         }
     }
    
+}
+
+/* 
+    CAROUSEL REPONSIVE
+*/
+
+
+/* 
+    INTRO
+*/
+@media screen and (max-width:768px) {
+    .intro{
+        .intro-container{
+            .intro-left{
+                margin-bottom: $mg-3;
+                height: 500px;
+            }
+
+            .intro-right{
+                background-image:  url('../../img/intro-2-xs.jpg');
+                height: 500px;
+                .intro-right-content{
+                    left: 10%;
+                    top: 35%;
+                    width: 70%;
+                }
+            }
+        }
+    }
+}
+
+/* 
+    OUR-VEHICLE
+*/
+@media screen and (max-width: 576px) {
+    .intro {
+        .intro-container {
+            .intro-left {
+                margin-bottom: $mg-3;
+                height: 500px;
+            }
+
+            .intro-right {
+                background-image: url("../../img/intro-2-xs.jpg");
+                height: 500px;
+                .intro-right-content {
+                    left: 10%;
+                    top: 35%;
+                    width: 70%;
+                }
+            }
+        }
+    }
+}
+
+/* OUR VEHICLE RESPONSIVE */
+@media screen and (max-width: 768px) {
+    #our-vehicle {
+        h1 {
+            font-size: $font-size-5;
+        }
+        .carousel-inner {
+            height: 550px;
+            .carousel-item {
+                height: 100%;
+            }
+        }
+        .carousel-indicators-config{
+            display: none;
+        }
+        // CREATE class carousel-indicators-xs, and trigger it when it meets the size
+        .carousel-indicators-xs {
+            display: block;
+            list-style: none;
+            margin: 0 auto;
+            text-align: left;
+            padding: 0;
+            width: 60%;
+            border: 1px solid $color-black;
+            position: absolute;
+            top: 0;
+            z-index:9;
+            background-color: $color-white;
+            left:20%;
+            .carousel-indicator-xs-header {
+                border-bottom: 1px solid $color-black;
+                padding-bottom: 0;
+                padding-top: 0;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                h1 {
+                    font-size: $font-size-1;
+                    margin: 0;
+                    color: $color-blue-200;
+                    font-weight: $font-weight-300;
+                    text-transform: uppercase;
+                    display: flex;
+                    align-items: left;
+                    flex-direction: column;
+                    padding: 0 $padding-4;
+                    .selection {
+                        font-size: $font-size-1;
+                        color: $color-darkblue-200;
+                        font-weight: $font-weight-bold;
+                    }
+                }
+                p {
+                    font-size: $font-size-5;
+                    color: $color-blue-200;
+                    margin: 0;
+                    transition: all 0.5s;
+                }
+            }
+            .carousel-indicator-xs-container{
+                display: none;
+            }
+            li {
+                font-size: $font-size-1;
+                font-weight: $font-weight-bold;
+                padding: $padding-2 $padding-1;
+                color: $color-darkblue-200;
+                cursor: pointer;
+            }
+        }
+
+        .carousel-inner {
+            bottom:$mg-4 * -1;
+            .carousel-caption-config {
+                width: 60%;
+                text-align: center;
+                left: 20%;
+                top: unset; // the unset value will inherite from its parent value
+                bottom: 20%;
+                font-size: $font-size-1 - 0.2rem;
+                .carousel-caption-detail {
+                    justify-content: space-between;
+                    .carousel-detail-content {
+                        h2 {
+                            font-size: $font-size-1 - 0.2rem;
+                        }
+                        p {
+                            font-size: $font-size-1 - 0.2rem;
+                            font-weight: $font-weight-normal;
+                        }
+                    }
+                }
+                img {
+                    transform: translateX(0);
+                    &.img-fluid {
+                        max-width: 70%;
+                    }
+                }
+            }
+            .carousel-caption-footer {
+                width: 100%;
+                text-align: center;
+                bottom: 5px;
+            }
+        }
+
+        // Arrow responsive
+        .carousel-control-prev {
+            left: 0;
+        }
+        .carousel-control-next {
+            right: 20px;
+        }
+    }
 }

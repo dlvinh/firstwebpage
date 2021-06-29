@@ -1,4 +1,4 @@
-#header{
+#header {
     position: fixed;
     top: 0;
     left: 0;
@@ -17,6 +17,10 @@
         border-right: $border-1;
         padding: $padding-3 $padding-4;
         font-size: 1.4rem;
+    }
+    .nav-link.active {
+        background-color: $color-white;
+        color: $color-blue-200;
     }
 }
 

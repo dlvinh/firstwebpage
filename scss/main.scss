@@ -5,19 +5,31 @@
 
 
 @import './base/reset';
+
 @import './helper/variable';
+@import './base/normalise';
 @import './helper/mixin';
 @import './layout/header';
 @import './layout/vehicle';
 @import './layout/discover';
 @import './layout/search';
+@import './layout/carousel';
+@import './layout/ourvehicle';
+@import './layout/vehicle-function';
+@import './layout/advertisement';
+@import './layout/news';
+@import './Pages/intro';
+@import './layout/footer';
 
 // COMPONENTS
 @import './components/button';
+@import './components/backtotop';
 
 // FUNCTIONS
 @import './helper/function';
-@import './responsive/xsScreen';
-@import './responsive/smScreen';
-@import './responsive/mdScreen';
 @import './responsive/lgScreen';
+@import './responsive/mdScreen';
+@import './responsive/smScreen';
+@import './responsive/xsScreen';
+
+

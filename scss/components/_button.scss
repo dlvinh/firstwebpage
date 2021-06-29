@@ -34,3 +34,33 @@
         cursor: pointer;
     }
 }
+
+.btn-carousel{
+    @include button($color-orange, $color-orange, $color-white, $padding-1 $padding-2, $color-white, $color-orange);
+}
+
+.btn-go{
+    @include button($color-blue-200, $color-blue-200,$color-white,$padding-1 $padding-2, transparent,$color-blue-100);
+}
+
+.btn-build{
+    text-transform: uppercase;
+    @include button($color-white, transparent,$color-white, $padding-1 $padding-3, $color-white,$color-blue-100);
+}
+
+.btn-caption{
+    padding: $padding-1 $padding-5;
+    @media screen and (max-width:576px) {
+        font-size: $font-size-1 - 0.2;
+        padding: $padding-1 $padding-3;
+    }
+}
+
+#advertisement{
+    .btn-go{
+        @include button($color-orange, $color-orange, $color-white,$padding-1 $padding-2,$color-white, $color-orange);
+    }
+    .btn-build{
+        @include button($color-white,transparent, $color-white, $padding-1 $padding-2, $color-white, $color-blue-100);
+    }
+}

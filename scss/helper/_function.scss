@@ -22,3 +22,67 @@
     }
 }
 
+/* 
+    Create a list of slider-{index} style which create the background image for each swiper slide
+*/
+@each $index, $img in (1, banner-1) (2, banner-2) (3,banner-3) (4,banner-4){
+    .slider-#{$index}{
+        background: url("../../img/#{$img}.jpg");
+        background-position: center center;
+        background-size: cover;
+    }
+    /* 
+        RESPONSIVE
+    */
+    @media screen and (max-width:768px) {
+        .slider-#{$index}{
+            background: url("../../img/#{$img}-xs.jpg");
+            background-position: center center;
+            background-size: cover;
+        }
+    }
+}
+
+/* 
+    Create a list of background image for each carousel of our-vehicle section 
+    First, we need to initalise the height of carousel-inner class
+*/
+@each $index, $img in (1, slider-1) (2, slider-2) (3,slider-3) (4,slider-4) (5,slider-5){
+    @media (max-width:768px) {
+        .carousel-#{$index}{
+            background: url("../../img/#{$img}-xs.jpg");
+            background-position: center center;
+            background-size: cover;
+        }
+    }
+    @media (min-width: 768.98px) {
+        .carousel-#{$index}{
+            background: url("../../img/#{$img}.jpg");
+            background-position: center center;
+            background-size: cover;
+        }
+    }
+   
+}
+
+/* 
+    Create a list of image for VEHICLE-FUNCTION section
+*/
+@each $index, $img in (1, item-1) (2, item-2) (3,item-3) (4,item-4){
+    .function-img-#{$index}{
+        background: url("../../img/#{$img}.jpg");
+        background-position: center center;
+        background-size: cover;
+    }
+}
+
+/* 
+    Create Background for news-items in News section
+*/
+@each $index, $img in (1, discover-1) (2, discover-2) (3,discover-3) (4,discover-4) (5,discover-5){
+    .news-background-#{$index}{
+        background: url("../../img/#{$img}.jpg");
+        background-position: center center;
+        background-size: cover;
+    }
+}

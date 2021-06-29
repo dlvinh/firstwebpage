@@ -2,10 +2,10 @@
     CONTAIN ALL CSS OF VEHICLE PAGE
 */
 
-.active{
-    background-color: $color-white;
-    color:$color-blue-200 !important;
-}
+// .active{
+//     background-color: $color-white;
+//     color:$color-blue-200;
+// }
 
 #vehicle.show-vehicle{
     display: block;
@@ -16,6 +16,8 @@
 #vehicle {
     background-color: $color-blue-overlay;
     display: none;
+    position: absolute;
+    z-index: 99;
     #vehicle-contain {
         .nav-vehicle {
             background-color: $color-white;
