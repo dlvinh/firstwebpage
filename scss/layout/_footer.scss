@@ -62,3 +62,34 @@
         }
     }    
 }
+
+#footer-copyright{
+    background-color: $color-blue-100;
+    padding: $padding-2 $padding-6;
+    .top-left{
+        p{
+            color: $color-grey;
+            font-size: $font-size-1;
+            a{
+                color: $color-grey;
+                font-style: italic;
+                text-decoration: underline;
+            }
+        }
+    }
+    .top-right{
+        text-align: right;
+        p{
+            font-size: $font-size-1;
+            color: $color-grey;
+        }
+        span{
+            margin: 0 $mg-2;
+        }
+    }
+    .copyright-logo{
+        padding: $padding-5 0;
+        display: flex;
+        justify-content: space-evenly;
+    }
+}

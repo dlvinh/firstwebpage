@@ -222,3 +222,84 @@
         }
     }
 }
+
+/* 
+    RESPONSIVE FOOTER TOP
+*/
+@media screen and (max-width:768px) {
+    #footer-section{
+        background-color: $color-white;
+        .footer-container{
+            // FOOTER-TOP
+            .footer-top{
+                .footer-detail{
+                    width: 100%;
+                    align-items: center;
+                    margin: $mg-1 0;
+                    h1{
+                        display: flex;
+                        justify-content: space-between;
+                        // border: $border-1;
+                        background-color: $color-grey;
+                        align-items: center;
+                        padding: $padding-3 $padding-2;
+                        margin:0;
+                        font-size: $font-size-1;
+                        i{
+                            font-size: $font-size-1;
+                        }
+                    }
+                    ul{
+                        padding-left: $padding-3;
+                    }
+                }
+            }
+            // FOOTER-BOTTOM
+            .footer-bottom{
+                display: flex;
+                flex-wrap: wrap;
+                .bottom-left{
+                    margin-bottom: $mg-2;
+                    .social-icon-container{
+                        i{
+                            margin: 0 $mg-1;
+                            height: 30px;
+                            width: 30px;
+                            line-height: 30px;
+                            font-size: 15px;
+                        }
+                    }
+                }
+                .bottom-right{
+                    text-align: left;
+                }
+            }
+        }
+        
+    }
+    #footer-copyright{
+        .top-left{
+            p{
+                font-size: $font-size-1 - 0.2;
+            }
+        }
+        .top-right{
+            text-align: left;
+            
+            p{
+                font-size: $font-size-1 - 0.2 ;
+            }
+            span{
+                margin: 0 $mg-1 - 2;
+            }
+        }
+        .copyright-logo{
+            img:first-child{
+                display: block;
+            }
+            img{
+                display: none;
+            }
+        }
+    }
+}
